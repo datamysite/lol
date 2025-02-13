@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{{URL::to('/')}}/public/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{URL::to('/')}}/public/css/style.css">
 
-    <title>Let`s off Leash</title>
+    <title>LOL - Let`s off Leash</title>
 </head>
 
 <body>
