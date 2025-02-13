@@ -52,7 +52,7 @@
 
                     <ul class="navbar-nav mx-auto logo-desktop">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#"><img src="{{URL::to('/')}}/public/images/lol-logo.png" alt="Vista Pro" height="80px" /></a>
+                            <a class="nav-link" href="{{URL::to('/')}}"><img src="{{URL::to('/')}}/public/images/lol-logo.png" alt="Vista Pro" height="80px" /></a>
                         </li>
                     </ul>
 
