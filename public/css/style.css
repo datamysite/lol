@@ -303,8 +303,9 @@ nav.fixed-top {
 }
 @media (max-width: 1199px) {
   .mobile-logo {
-    display: block;
-    margin: 20px 0;
+            display: flex;
+        margin: 20px 0;
+        align-items: center;
   }
 }
 
