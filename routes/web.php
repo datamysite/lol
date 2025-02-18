@@ -16,3 +16,7 @@ Route::get('/migrate', function () {
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/beta', function () {
+    return view('welcome');
+});
