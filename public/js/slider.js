@@ -4,10 +4,7 @@ $(document).ready(function() {
     spaceBetween: 0,
     slidesPerView: 3,
     centeredSlides: true,
-    autoplay: {
-      delay: 9500,
-      disableOnInteraction: false,
-    },
+    autoplay: false,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

@@ -13,18 +13,26 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{URL::to('/')}}/public/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="{{URL::to('/')}}/public/css/style.css">
+    <link rel="stylesheet" href="{{URL::to('/')}}/public/css/slider.css">
 
     <title>LOL - Let`s off Leash</title>
 </head>
 
 <body>
 
-    <div id="fh5co-hero-carousel" class="carousel slide header" data-ride="carousel">
+    <!-- WATCH IT FULLSCREEN PLZ -->
+
+    <section id="fh5co-hero-carousel"  class="creative-carousal--hero carousel slide header">
         <nav class="navbar fixed-top navbar-expand-xl">
             <div class="container">
                 <a class="navbar-brand mobile-logo" href="#">
-                    <img src="{{URL::to('/')}}/public/images/lol-logo.png" alt="LOL" height="50px" />
+                    <img src="{{URL::to('/')}}/public/images/kj-logo.png" alt="LOL" height="45px" style="margin-top: 10px;" />
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <img src="{{URL::to('/')}}/public/images/lol-logo.png" alt="LOL" height="55px" />
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <img src="{{URL::to('/')}}/public/images/lol-j-logo.png" alt="LOL" height="50px" />
                 </a>
                 <button class="navbar-toggler" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse">
                     <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </button>
@@ -52,7 +60,13 @@
 
                     <ul class="navbar-nav mx-auto logo-desktop">
                         <li class="nav-item active">
-                            <a class="nav-link" href="{{URL::to('/')}}"><img src="{{URL::to('/')}}/public/images/lol-logo.png" alt="Vista Pro" height="80px" /></a>
+                            <a class="nav-link" href="{{URL::to('/')}}">
+                                <img src="{{URL::to('/')}}/public/images/kj-logo.png" alt="LOL Logo" height="55px" />
+                                &nbsp;|&nbsp;
+                                <img src="{{URL::to('/')}}/public/images/lol-logo.png" alt="LOL Logo" height="80px" />
+                                &nbsp;|&nbsp;
+                                <img src="{{URL::to('/')}}/public/images/lol-j-logo.png" alt="LOL Logo" height="65px" />
+                            </a>
                         </li>
                     </ul>
 
@@ -78,30 +92,57 @@
             </div>
         </nav>
 
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-
-                <img class="d-block w-100 home-bg" alt="home-bg" src="{{URL::to('/')}}/public/images/home-bg.png">
-
-                <div class="carousel-caption d-md-block">
-                    <p class="frst-hrd text-theme">Freedom in Every Stories!</p>
-                    <h5 class="hero-title">Welcome to <br><font class="text-theme">LOL (Let's Off Leash)</font></h5>
-                    <p><small>Hosted by</small> <font class="text-theme"><strong>Kasturi Jha.</strong></font></p>
-
+        <div class="carousel-slider swiper-container-horizontal">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-background="{{URL::to('public/images/world.png')}}" style="background-image: url({{URL::to('public/images/world.png')}});">
+                    <div class="inner">
+                        <p><font class="text-theme">Welcome</font> to the world of</p> 
+                        <h2>Kasturi Jha</h2> 
+                        <a class="hero-cta" href="https://www.youtube.com/@LetsOffLeash" target="_blank"><i class="fab fa-youtube"></i> View Channel</a>
+                    </div>
                 </div>
-
-
+                <div class="swiper-slide" data-background="{{URL::to('public/images/lol-junction.png')}}" style="background-image: url({{URL::to('public/images/lol-junction.png')}});">
+                    <div class="inner"><h2>LOL Junction</h2> 
+                    <p>Storytelling podcast on <br><font class="text-theme">Entrepreneurship</font>, <font class="text-theme">Wellness</font>, and <font class="text-theme">Lifestyle</font>.</p>
+                    <br>
+                    <a class="hero-cta" href="https://open.spotify.com/show/61pd8PHv95YUwPprdu5LZP" target="_blank"><i class="fab fa-spotify"></i> Listen to Podcast</a> 
+                </div>
+                </div>
+                <div class="swiper-slide" data-background="{{URL::to('public/images/letsoffleash.png')}}" style="background-image: url({{URL::to('public/images/letsoffleash.png')}});">
+                    <div class="inner">
+                        <h2>Let’s Off Leash </h2> 
+                        <p>The world’s first <br>animal podcast by <font class="text-theme">Kasturi Jha</font></p> 
+                        <br>
+                        <a class="hero-cta" href="https://open.spotify.com/show/61pd8PHv95YUwPprdu5LZP" target="_blank"><i class="fab fa-spotify"></i> Listen to Podcast</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-background="{{URL::to('public/images/kasturi-jha2.png')}}" style="background-image: url({{URL::to('public/images/kasturi-jha2.png')}});">
+                    <div class="inner">
+                        <h2>Kasturi Jha</h2> 
+                        <p>
+                            Brand <font class="text-theme">promotion</font>
+                            <br>Influencer <font class="text-theme">Marketing</font>
+                            <br>Event <font class="text-theme">Hosting</font>.
+                        </p> 
+                        <br>
+                        <a class="hero-cta" href="#contact">
+                             Work with <i class="fa fa-handshake"></i> Kasturi</a>
+                    </div>
+                </div>
             </div>
-            <div class="scroll-button">
-                <p>It’s a movement to explore unheard stories of <font class="text-theme">animals</font> and <font class="text-theme">people</font>.</p>
-                <a href="#about-us" class="page-scroll">
-                    <img src="{{URL::to('/')}}/public/images/arrows-down.png" alt="arrow down" />
-                </a>
-
+            <!-- End Of Swiper -->
+            <div class="slide-progress"> 
+                <span>01</span>
+                <div class="swiper-pagination swiper-pagination-progressbar"><span class="swiper-pagination-progressbar-fill"></span></div>
+                <span>04</span> 
             </div>
-        </div>
-    </div>
-
+            <!-- end of progress -->
+            <div class="swiper-button-prev">PREV</div>
+            <!-- end button-prev -->
+            <div class="swiper-button-next">NEXT</div>
+            <!-- end button-next -->
+            </div>
+        </section>
 
     <div class="container-fluid fh5co-about-us" id="about-us">
         <div class="container">
@@ -303,6 +344,8 @@
     <script src="{{URL::to('/')}}/public/owl-carousel/owl.carousel.min.js"></script>
     <script src="{{URL::to('/')}}/public/js/isotope-docs.min.js?6"></script>
     <script src="{{URL::to('/')}}/public/js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="{{URL::to('/')}}/public/js/slider.js"></script>
 </body>
 
 </html>
