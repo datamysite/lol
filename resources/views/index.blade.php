@@ -153,6 +153,9 @@
 
                     <div class="owl-carousel owl-carousel1 owl-theme">
                         <div>
+                            <img src="{{URL::to('/')}}/public/images/about-main.png" alt="" class="img-fluid" />
+                        </div>
+                        <div>
                             <img src="{{URL::to('/')}}/public/images/about3.png" alt="" class="img-fluid" />
                         </div>
                         <div>
