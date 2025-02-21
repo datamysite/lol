@@ -190,46 +190,72 @@
                     <p>Our YouTube channel is a hub of engaging and thought-provoking content that brings stories to life through compelling visuals and in-depth storytelling. From exclusive interviews with experts and rescuers to heartwarming animal rescue stories and insightful discussions on human resilience, every video is crafted to educate, inspire, and entertain. Whether you're looking for eye-opening narratives or practical solutions to real-world issues, our channel offers a diverse range of content that connects, informs, and uplifts.</p>
                     <br>
                 </div>
-                <div class="col-md-4">
-                    <iframe src="https://www.youtube.com/embed/K8Gu3k5vAx0?si=aDde_8vTwP2aM2-V" allowfullscreen></iframe>
-                    <h5 class="text-theme2">Salman Khan Exotic Pet Dog - <font class="text-theme text-bold">Kasturi Jha</font></h5>
+                <div class="col-md-12">
+                    <div class="tabs-wrapper">
+                        <div id="scroller" class="nav nav-tabs">
+                          <a data-toggle="tab" href="#letsoffleash" class="active show">LetsOffLeash</a>
+                          <a data-toggle="tab" href="#lol-junction">LOL Junction</a>
+                        </div>
+                    </div>
+
+                    <div class="tab-content">
+                        <div id="letsoffleash" class="tab-pane fade in active show">
+                          <div class="row">
+                            <div class="col-md-4">
+                                <iframe src="https://www.youtube.com/embed/K8Gu3k5vAx0?si=aDde_8vTwP2aM2-V" allowfullscreen></iframe>
+                                <h5 class="text-theme2">Salman Khan Exotic Pet Dog - <font class="text-theme text-bold">Kasturi Jha</font></h5>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.youtube.com/embed/uvi-hqkNoPg?si=tgrmmFOpk_dNZ9JG" allowfullscreen></iframe>
+                                <h5 class="text-theme2">Must-Listen Podcast for Pet Parents - <font class="text-theme text-bold">Kasturi Jha</font></h5>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.youtube.com/embed/3zMfNM7EslE?si=TBa5XM8J2azg4-ij" allowfullscreen></iframe>
+                                <h5 class="text-theme2">Lebanon’s Animals Left to Suffer War - <font class="text-theme text-bold">Kasturi Jha</font></h5>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.youtube.com/embed/pd1f8lYVYe4?si=a9mw-C5XA4o44OVW" allowfullscreen></iframe>
+                                <h5 class="text-theme2">Real Talk Dog vs Cat real fight to death - <font class="text-theme text-bold">Kasturi Jha</font></h5>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.youtube.com/embed/RAAjkx7t6Pc?si=8opFPfpVQXr3IVDo" allowfullscreen></iframe>
+                                <h5 class="text-theme2">How Do Dogs See The World? - <font class="text-theme text-bold">Kasturi Jha</font></h5>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.youtube.com/embed/KgItsWczMUo?si=bsKhfp28bbId3Uss" allowfullscreen></iframe>
+                                <h5 class="text-theme2">Pet Health Insurance: Veterinarian Answers Pet Questions - <font class="text-theme text-bold">Kasturi Jha</font></h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="lol-junction" class="tab-pane fade">
+                          <div class="row">
+                            <div class="col-md-4">
+                                <iframe src="https://www.youtube.com/embed/rL_3BLBIZko?si=WQZ3AM0Hu5gP-0jN" allowfullscreen></iframe>
+                                <h5 class="text-theme2">Must Do This Business in 2025 - <font class="text-theme text-bold">Kasturi Jha</font></h5>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.youtube.com/embed/uHx59MKFu6Y?si=kzBwqEFj66JYcu3y" allowfullscreen></iframe>
+                                <h5 class="text-theme2">Live Telepathic Conversations - <font class="text-theme text-bold">Kasturi Jha</font></h5>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.youtube.com/embed/CZdKINL4QGk?si=bcgwkbuGHSZOk4oF" allowfullscreen></iframe>
+                                <h5 class="text-theme2">Dr. Navneet: Explosive Conversation - <font class="text-theme text-bold">Kasturi Jha</font></h5>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+
                 </div>
-                <div class="col-md-4">
-                    <iframe src="https://www.youtube.com/embed/rL_3BLBIZko?si=WQZ3AM0Hu5gP-0jN" allowfullscreen></iframe>
-                    <h5 class="text-theme2">Must Do This Business in 2025 - <font class="text-theme text-bold">Kasturi Jha</font></h5>
-                </div>
-                <div class="col-md-4">
-                    <iframe src="https://www.youtube.com/embed/uvi-hqkNoPg?si=tgrmmFOpk_dNZ9JG" allowfullscreen></iframe>
-                    <h5 class="text-theme2">Must-Listen Podcast for Pet Parents - <font class="text-theme text-bold">Kasturi Jha</font></h5>
-                </div>
-                <div class="col-md-4">
-                    <iframe src="https://www.youtube.com/embed/uHx59MKFu6Y?si=kzBwqEFj66JYcu3y" allowfullscreen></iframe>
-                    <h5 class="text-theme2">Live Telepathic Conversations - <font class="text-theme text-bold">Kasturi Jha</font></h5>
-                </div>
-                <div class="col-md-4">
-                    <iframe src="https://www.youtube.com/embed/3zMfNM7EslE?si=TBa5XM8J2azg4-ij" allowfullscreen></iframe>
-                    <h5 class="text-theme2">Lebanon’s Animals Left to Suffer War - <font class="text-theme text-bold">Kasturi Jha</font></h5>
-                </div>
-                <div class="col-md-4">
-                    <iframe src="https://www.youtube.com/embed/RAAjkx7t6Pc?si=8opFPfpVQXr3IVDo" allowfullscreen></iframe>
-                    <h5 class="text-theme2">How Do Dogs See The World? - <font class="text-theme text-bold">Kasturi Jha</font></h5>
-                </div>
-                <div class="col-md-4">
-                    <iframe src="https://www.youtube.com/embed/pd1f8lYVYe4?si=a9mw-C5XA4o44OVW" allowfullscreen></iframe>
-                    <h5 class="text-theme2">Real Talk Dog vs Cat real fight to death - <font class="text-theme text-bold">Kasturi Jha</font></h5>
-                </div>
-                <div class="col-md-4">
-                    <iframe src="https://www.youtube.com/embed/KgItsWczMUo?si=bsKhfp28bbId3Uss" allowfullscreen></iframe>
-                    <h5 class="text-theme2">Pet Health Insurance: Veterinarian Answers Pet Questions - <font class="text-theme text-bold">Kasturi Jha</font></h5>
-                </div>
-                <div class="col-md-4">
-                    <iframe src="https://www.youtube.com/embed/CZdKINL4QGk?si=bcgwkbuGHSZOk4oF" allowfullscreen></iframe>
-                    <h5 class="text-theme2">Dr. Navneet: Explosive Conversation - <font class="text-theme text-bold">Kasturi Jha</font></h5>
+                <div class="col-md-12 text-center">
+                    <a href="https://www.youtube.com/@LetsOffLeash" class="read-more" target="_blank">Visit Channel</a>
                 </div>
             </div>
         </div>
 
     </div>
+
+
     <div class="container-fluid fh5co-news" id="community">
         <div class="container">
             <h2>Community & Impact</h2>
