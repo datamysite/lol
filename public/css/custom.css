@@ -1,0 +1,69 @@
+.social-media-wi {
+    position: fixed;
+    left: 0;
+    bottom: 180px;
+    z-index: 9;
+}
+.social-media-wi li{
+    margin-bottom: 5px;
+}
+.social-media-wi li a {
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 19px;
+}
+.social-media-wi .wi-youtube{
+    background-color:   #FF0000;
+}
+.social-media-wi .wi-instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.social-media-wi .wi-facebook{
+    background-color:   #1877F2;
+}
+.social-media-wi .wi-facebook a {
+    padding-left: 10px;
+}
+.social-media-wi .wi-linkedin{
+    background-color: #0077B5;
+}
+
+#blogs .card-img {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+  object-fit: cover;
+    object-position: center;
+    height: 200px;
+    width: 100%;
+}
+
+#blogs .card-title {
+  margin-bottom: 0.3rem;
+}
+
+#blogs .cat {
+  display: inline-block;
+}
+
+#blogs .fa-users {
+  margin-left: 1rem;
+}
+#blogs .card-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 11px;
+}
+
+#blogs .card-footer {
+  font-size: 0.8rem;
+}
+#blogs .card-body {
+    padding: 5px 0px !important;
+}
+.container-stiped {
+    background-color: #efefef;
+}
