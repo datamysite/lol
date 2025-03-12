@@ -172,15 +172,6 @@
           <div class="row">
             <div class="col-md-12">
               <div class="form-group">
-                <label>Tags</label>
-                <input type="text" class="form-control" id="inputTag" name="tags" data-role="tagsinput" required>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <div class="form-group">
                 <label>Description</label>
                 <textarea class="form-control" name="description" id="content" rows="10"></textarea>
               </div>

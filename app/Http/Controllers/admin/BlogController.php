@@ -55,7 +55,7 @@ class BlogController extends Controller
             $response['errors'] = 'Please Fill all required fields.';
         } else {
 
-            $blog = Blogs::where('heading', $data['heading'])->where('category_id', $data['category_id'])->get();
+            $blog = Blogs::where('heading', $data['heading'])->get();
 
             if (count($blog) == 0) {
 
@@ -70,7 +70,7 @@ class BlogController extends Controller
                     $mt = new MetaTags;
                     $mt->url = $meta_url;
                     $mt->title = $data['heading'];
-                    $mt->keywords = $data['tags'];
+                    $mt->keywords = '';
                     $mt->description = $data['short_description'];
                     $mt->created_by = Auth::guard('admin')->id();
                     $mt->save();

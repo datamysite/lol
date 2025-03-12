@@ -27,13 +27,6 @@ class Blogs extends Model
         $b->created_by = Auth::guard('admin')->id();
         $b->save();
 
-        $tags = explode(',',$data['tags']);
-        foreach ($tags as $key => $val) {
-            $t = new BlogTags;
-            $t->blog_id = $b->id;
-            $t->tag = $val;
-            $t->save();
-        }
 
         return $b->id;
     }
@@ -49,15 +42,6 @@ class Blogs extends Model
         $b->short_description = $data['short_description'];
         $b->author_id = $data['author_id'];
         $b->save();
-
-        BlogTags::where('blog_id', $id)->delete();
-        $tags = explode(',',$data['tags']);
-        foreach ($tags as $key => $val) {
-            $t = new BlogTags;
-            $t->blog_id = $b->id;
-            $t->tag = $val;
-            $t->save();
-        }
 
         return $b->id;
     }
