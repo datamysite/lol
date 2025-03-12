@@ -67,3 +67,43 @@
 .container-stiped {
     background-color: #efefef;
 }
+.sub-header-div {
+    height: 400px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.sub-header-content {
+    max-width: 650px;
+    margin: auto;
+    position: absolute;
+     bottom: 5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+.blog-share {
+    width: 100%;
+    background-color: #ffffffe0;
+    text-align: center;
+}
+.blog-share .blog-share-content {
+    padding: 5px 0px;
+}
+.blog-share .blog-share-content p {
+    margin-bottom: 5px;
+}
+.blog-share .blog-share-content a {
+    margin-right: 8px;
+    font-size: 14px;
+    padding: 2px 6px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.blog-share .share {
+    background-color: #FFC100;
+    color: #fff;
+}
+.blog-share .share-copy {
+    border: 1px solid #FFC100;
+}

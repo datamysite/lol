@@ -9,6 +9,7 @@ use App\Models\Blogs;
 class WebController extends Controller
 {
     public function index(){
+        $data['nav'] = 'home';
         $data['blogs'] = Blogs::orderBy('created_at', 'desc')->limit(3)->get();
 
         return view('web.index')->with($data);

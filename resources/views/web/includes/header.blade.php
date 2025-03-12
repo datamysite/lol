@@ -15,13 +15,13 @@
                     <div>
                         <ul class="navbar-nav float-right menu-links">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Home</a>
+                                <a class="nav-link {{$nav == 'home' ? 'active' : ''}}" href="{{route('home')}}">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#about-us">About us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">Blogs</a>
+                                <a class="nav-link {{$nav == 'blogs' ? 'active' : ''}}" href="{{route('blogs')}}">Blogs</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#contact">Contact us</a>
