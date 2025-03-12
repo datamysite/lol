@@ -11,7 +11,7 @@ class BlogController extends Controller
     public function index(){
         $data['nav'] = 'blogs';
         
-        $data['data'] = Blogs::where('status', '1')->orderBy('created_at', 'desc')->paginate(8);
+        $data['data'] = Blogs::where('status', '1')->orderBy('id', 'desc')->paginate(8);
         //dd($data);
         return view('web.blogs.index')->with($data);
     }
@@ -21,7 +21,7 @@ class BlogController extends Controller
         
         $data['data'] = Blogs::where('slug', $blog_slug)->where('status', '1')->first();
 
-        $data['related'] = Blogs::where('slug', '!=', $blog_slug)->orderBy('created_at', 'desc')->limit(3)->get();
+        $data['related'] = Blogs::where('slug', '!=', $blog_slug)->orderBy('id', 'desc')->limit(3)->get();
         if(empty($data['data']->id)){
             return redirect(route('blogs'));
         }
