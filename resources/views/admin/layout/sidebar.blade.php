@@ -95,6 +95,15 @@
 
 
           <li class="nav-item">
+            <a href="{{route('admin.updates')}}" class="nav-link {{$menu == 'updates' ? 'active' : ''}}">
+              <i class="nav-icon fas fa-newspaper"></i>
+              <p>
+                Latest Updates
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
             <a href="{{route('admin.newsletter')}}" class="nav-link {{$menu == 'newsletter' ? 'active' : ''}}">
               <i class="nav-icon fas fa-copy"></i>
               <p>

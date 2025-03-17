@@ -73,6 +73,19 @@ Route::prefix('admin/panel')->namespace('App\Http\Controllers\admin')->group(fun
             });
         });
 
+        //Latest Updates
+        Route::prefix('updates')->group(function () {
+
+            Route::get('/', 'UpdateController@index')->name('admin.updates');
+            Route::get('/load', 'UpdateController@load')->name('admin.updates.load');
+            Route::get('/search/{val}', 'UpdateController@search');
+            Route::post('/create', 'UpdateController@create')->name('admin.updates.create');
+            Route::get('/delete/{id}', 'UpdateController@delete');
+            Route::get('/edit/{id}', 'UpdateController@edit');
+            Route::post('/update', 'UpdateController@update_blog')->name('admin.updates.update');
+
+        });
+
 
         //Newsletter
         Route::prefix('newsletter')->group(function () {

@@ -868,3 +868,10 @@ a{
 [class*=sidebar-dark] .brand-link, [class*=sidebar-dark] .brand-link .pushmenu{
     color: #ffc100 !important;
 }
+
+
+.edit-mblog-image-wrapper-updates{
+    width: 185px !important;
+    height: 245px !important;
+    background-position: center !important;
+}

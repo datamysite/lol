@@ -107,3 +107,48 @@
 .blog-share .share-copy {
     border: 1px solid #FFC100;
 }
+
+
+#latest-updates .card-img {
+
+  object-fit: cover;
+    object-position: center;
+    height: 245px;
+    width: 185px;
+    box-shadow: 8px 11px 16px 0px rgb(76 76 76 / 29%);
+}
+
+#latest-updates .card-title {
+  margin-bottom: 0.3rem;
+}
+
+#latest-updates .cat {
+  display: inline-block;
+}
+
+#latest-updates .fa-users {
+  margin-left: 1rem;
+}
+#latest-updates .card-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 11px;
+}
+#latest-updates .card-footer {
+  font-size: 0.8rem;
+}
+#latest-updates .card-body {
+    padding: 5px 0px !important;
+}
+#latest-updates .card {
+    flex-direction: row;
+    align-items: flex-end;
+        background-color: transparent;
+}
+#latest-updates .news-block {
+    background-color: #ffc10026;
+    padding: 15px;
+}
