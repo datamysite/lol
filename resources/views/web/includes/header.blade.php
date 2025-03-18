@@ -53,7 +53,7 @@
                                 <a class="nav-link" href="#community">Community</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">Latest Updates</a>
+                                <a class="nav-link" href="#latest-updates">Latest Updates</a>
                             </li>
 
                         </ul>
