@@ -1,4 +1,4 @@
-<footer class="container-fluid fh5co-footer">
+<footer class="container-fluid fh5co-footer container-stiped">
         <div class="container" id="contact">
             <div class="row">
                 <div class="col-lg-5">
@@ -32,11 +32,11 @@
                 </div>
 
                 <div class="col-lg-7">
-                    <div class="form-box">
+                    <div class="form-box container-stiped">
                         <h4>What would you like to talk about</h4>
                         <p>We'd Love to Hear From you !</p>
                         <hr />
-                        <table class="table table-light table-borderless">
+                        <table class="table table-light table-borderless container-stiped">
                             <tr>
                                 <td><input type="text" class="form-control" placeholder="Name...">
                                 </td>

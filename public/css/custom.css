@@ -152,3 +152,25 @@
     background-color: #ffc10026;
     padding: 15px;
 }
+.sponsorships-div .sponsorships-details {
+    background-color: #ffc10026;
+    box-shadow: 8px 11px 16px 0px rgb(76 76 76 / 29%);
+    padding: 15px 10px 40px 30px;
+    border-bottom: 2px solid #084c47;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.sponsorships-div .sponsorships-title {
+    background-color: #fff;
+    font-weight: 600;
+    color: #084c47;
+    margin: auto;
+    margin-top: -30px;
+    margin-bottom: 35px;
+    width: fit-content;
+    padding: 12px 25px;
+    font-size: 18px;
+}
+#services .row{
+    justify-content: center;
+}

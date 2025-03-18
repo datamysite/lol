@@ -270,4 +270,90 @@
         </div>
     </div>
 
+
+    <div class="container-fluid fh5co-news" id="services">
+        <div class="container">
+            <h2>Services</h2>
+            <p class="text-center">Boost your brand with our pet-focused audience! We offer sponsorships, including featured segments, product placements, and shoutouts in our podcasts. Let’s collaborate to showcase your brand authentically—reach out today!</p>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="sponsorships-div">
+                        <div class="sponsorships-details text-theme2">
+                            <ul>
+                                <li>Exclusive branding</li>
+                                <li>Logo in visuals</li>
+                                <li>Mentions in episodes</li>
+                                <li>Social media shoutouts</li>
+                            </ul>
+                        </div>
+                        <div class="sponsorships-title">
+                            Title Sponsorship
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sponsorships-div">
+                        <div class="sponsorships-details text-theme2">
+                            <ul>
+                                <li>Sponsor a segment</li>
+                                <li>Integrated messaging</li>
+                                <li>Audience engagement</li>
+                                <li>Social media coverage</li>
+                            </ul>
+                        </div>
+                        <div class="sponsorships-title">
+                            Rapid Fire Round Sponsorship
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sponsorships-div">
+                        <div class="sponsorships-details text-theme2">
+                            <ul>
+                                <li>Brand in a segment.</li>
+                                <li>Examples: <br>"Tech Tips, Wellness Moment"</li>
+                                <li>Promote across platforms</li>
+                            </ul>
+                        </div>
+                        <div class="sponsorships-title">
+                            Branded Segment Integration
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sponsorships-div">
+                        <div class="sponsorships-details text-theme2">
+                            <ul>
+                                <li>Product/service giveaway</li>
+                                <li>Cross-promotion</li>
+                                <li>Audience engagement</li>
+                                <li>Social media posts</li>
+                            </ul>
+                        </div>
+                        <div class="sponsorships-title">
+                            Giveaway Collaboration
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sponsorships-div">
+                        <div class="sponsorships-details text-theme2">
+                            <ul>
+                                <li>Branded hampers</li>
+                                <li>Include products/services</li>
+                                <li>Showcase on episodes/social media</li>
+                                <li>Hashtag for sharing</li>
+                            </ul>
+                        </div>
+                        <div class="sponsorships-title">
+                            Guest Hamper Sponsorship
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <br>
+        </div>
+    </div>
+
 @endsection
