@@ -907,7 +907,7 @@ footer.fh5co-footer .social-links li a {
   border: none;
   border-top: 1px solid #f7f7f7;
 }
-.form-box input[type="text"],
+.form-box input[type="text"], .form-box input[type="email"],
 .form-box textarea {
   border: 1px solid #084c47;
   background-color: rgba(235, 235, 235, 0.09);

@@ -36,28 +36,39 @@
                         <h4>What would you like to talk about</h4>
                         <p>We'd Love to Hear From you !</p>
                         <hr />
-                        <table class="table table-light table-borderless container-stiped">
-                            <tr>
-                                <td><input type="text" class="form-control" placeholder="Name...">
-                                </td>
+                        <form action="{{route('enquiry.submit')}}" method="post">
+                            @csrf
+                            <table class="table table-light table-borderless container-stiped">
+                                <tr>
+                                    <td>
+                                        <input type="text" class="form-control" name="name" placeholder="Name..." required>
+                                    </td>
 
-                                <td><input type="text" class="form-control" placeholder="Email address">
-                                </td>
-                            </tr>
+                                    <td>
+                                        <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="email" class="form-control" name="email" placeholder="Email address" required>
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <td colspan="2"><textarea class="form-control" placeholder="You Message"></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <button type="submit">
-                                        SUBMIT NOW
-                                    </button>
+                                <tr>
+                                    <td colspan="2">
+                                        <textarea class="form-control" placeholder="You Message" name="description" required></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <button type="submit">
+                                            SUBMIT NOW
+                                        </button>
 
-                                </td>
-                            </tr>
-                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
                     </div>
                 </div>
 
