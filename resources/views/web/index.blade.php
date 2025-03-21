@@ -67,16 +67,19 @@
 
                     <div class="owl-carousel owl-carousel1 owl-theme">
                         <div>
-                            <img src="{{URL::to('/')}}/public/images/about-main.png" alt="" class="img-fluid" />
+                            <img src="{{URL::to('/')}}/public/images/ab1.png" alt="" class="img-fluid" />
+                        </div>
+                        <div>
+                            <img src="{{URL::to('/')}}/public/images/ab2.png" alt="" class="img-fluid" />
+                        </div>
+                        <div>
+                            <img src="{{URL::to('/')}}/public/images/ab3.png" alt="" class="img-fluid" />
                         </div>
                         <div>
                             <img src="{{URL::to('/')}}/public/images/about3.png" alt="" class="img-fluid" />
                         </div>
                         <div>
                             <img src="{{URL::to('/')}}/public/images/about2.png" alt="" class="img-fluid" />
-                        </div>
-                        <div>
-                            <img src="{{URL::to('/')}}/public/images/about4.png" alt="" class="img-fluid" />
                         </div>
                     </div>
                 </div>
