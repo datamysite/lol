@@ -1,12 +1,16 @@
 <nav class="navbar fixed-top navbar-expand-xl" id="desktop-nav">
             <div class="container">
-                <a class="navbar-brand mobile-logo" href="#">
-                    <img src="{{URL::to('/')}}/public/images/kj-logo.png" alt="LOL" height="45px" style="margin-top: 10px;" />
-                    &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <img src="{{URL::to('/')}}/public/images/lol-logo.png" alt="LOL" height="55px" />
-                    &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <img src="{{URL::to('/')}}/public/images/lol-j-logo.png" alt="LOL" height="50px" />
-                </a>
+                <div class=" main-logos">
+                    <a class="navbar-brand mobile-logo {{!empty($mm) && $mm == 'kj' ? 'active' : ''}}" href="{{URL::to('/kasturijha')}}">
+                        <img src="{{URL::to('/')}}/public/images/kj-logo.png" alt="LOL" height="40px" style="margin-top: 10px;" />
+                    </a>
+                    <a class="navbar-brand mobile-logo {{empty($mm) ? 'active' : ''}}" href="{{URL::to('/')}}">
+                        <img src="{{URL::to('/')}}/public/images/lol-j-logo.png" alt="LOL" height="55px" />
+                    </a>
+                    <a class="navbar-brand mobile-logo {{!empty($mm) && $mm == 'lol' ? 'active' : ''}}" href="{{URL::to('/letsoffleash')}}">
+                        <img src="{{URL::to('/')}}/public/images/lol-logo.png" alt="LOL" height="50px" />
+                    </a>
+                </div>
                 <button class="navbar-toggler" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse">
                     <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </button>
 
@@ -31,13 +35,15 @@
                     </div>
 
                     <ul class="navbar-nav mx-auto logo-desktop">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{URL::to('/')}}">
-                                <img src="{{URL::to('/')}}/public/images/kj-logo.png" alt="LOL Logo" height="55px" />
-                                &nbsp;|&nbsp;
-                                <img src="{{URL::to('/')}}/public/images/lol-logo.png" alt="LOL Logo" height="80px" />
-                                &nbsp;|&nbsp;
-                                <img src="{{URL::to('/')}}/public/images/lol-j-logo.png" alt="LOL Logo" height="65px" />
+                        <li class="nav-item active main-logos">
+                            <a class="nav-link {{!empty($mm) && $mm == 'kj' ? 'active' : ''}}" href="{{URL::to('/kasturijha')}}">
+                                <img src="{{URL::to('/')}}/public/images/kj-logo.png" alt="LOL Logo" height="60px" style="padding-top:10px;" />
+                            </a>
+                            <a class="nav-link {{empty($mm) ? 'active' : ''}}" href="{{URL::to('/')}}">
+                                <img src="{{URL::to('/')}}/public/images/lol-j-logo.png" alt="LOL Logo" height="60px" />
+                            </a>
+                            <a class="nav-link {{!empty($mm) && $mm == 'lol' ? 'active' : ''}}" href="{{URL::to('/lol')}}">
+                                <img src="{{URL::to('/')}}/public/images/lol-logo.png" alt="LOL Logo" height="60px" />
                             </a>
                         </li>
                     </ul>

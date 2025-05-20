@@ -143,16 +143,34 @@
                     <br>
                 </div>
                 <div class="col-md-12">
+                    <div class="tabs-wrapper">
+                        <div id="scroller" class="nav nav-tabs">
+                          <a data-toggle="tab" href="#letsoffleash" class="active show">LetsOffLeash</a>
+                          <a data-toggle="tab" href="#lol-junction">LOL Junction</a>
+                        </div>
+                    </div>
+
                     <div class="tab-content">
                         <div id="letsoffleash" class="tab-pane fade in active show">
                           <div class="row">
-                            @foreach($videos as $val)
+                            @foreach($videos_lol as $val)
                                 <div class="col-md-4">
                                     <iframe src="https://www.youtube.com/embed/{{$val->iframe}}" allowfullscreen></iframe>
                                     <h5 class="text-theme2">{{$val->name}} - <font class="text-theme text-bold">Kasturi Jha</font></h5>
                                 </div>
                             @endforeach
                             
+                          </div>
+                        </div>
+                        <div id="lol-junction" class="tab-pane fade">
+                          <div class="row">
+                            
+                            @foreach($videos_lolj as $val)
+                                <div class="col-md-4">
+                                    <iframe src="https://www.youtube.com/embed/{{$val->iframe}}" allowfullscreen></iframe>
+                                    <h5 class="text-theme2">{{$val->name}} - <font class="text-theme text-bold">Kasturi Jha</font></h5>
+                                </div>
+                            @endforeach
                           </div>
                         </div>
                     </div>
@@ -250,11 +268,10 @@
                                 <li>Social media shoutouts</li>
                             </ul>
                         </div>
-                        <a href="#contact" class="sponsorships-title">
+                        <div class="sponsorships-title">
                             Title Sponsorship
-                        </a>
+                        </div>
                     </div>
-                    <br>
                 </div>
                 <div class="col-md-4">
                     <div class="sponsorships-div">
@@ -266,11 +283,10 @@
                                 <li>Social media coverage</li>
                             </ul>
                         </div>
-                        <a href="#contact" class="sponsorships-title">
+                        <div class="sponsorships-title">
                             Rapid Fire Round Sponsorship
-                        </a>
+                        </div>
                     </div>
-                    <br>
                 </div>
                 <div class="col-md-4">
                     <div class="sponsorships-div">
@@ -281,11 +297,10 @@
                                 <li>Promote across platforms</li>
                             </ul>
                         </div>
-                        <a href="#contact" class="sponsorships-title">
+                        <div class="sponsorships-title">
                             Branded Segment Integration
-                        </a>
+                        </div>
                     </div>
-                    <br>
                 </div>
                 <div class="col-md-4">
                     <div class="sponsorships-div">
@@ -297,11 +312,10 @@
                                 <li>Social media posts</li>
                             </ul>
                         </div>
-                        <a href="#contact" class="sponsorships-title">
+                        <div class="sponsorships-title">
                             Giveaway Collaboration
-                        </a>
+                        </div>
                     </div>
-                    <br>
                 </div>
                 <div class="col-md-4">
                     <div class="sponsorships-div">
@@ -313,11 +327,10 @@
                                 <li>Hashtag for sharing</li>
                             </ul>
                         </div>
-                        <a href="#contact" class="sponsorships-title">
+                        <div class="sponsorships-title">
                             Guest Hamper Sponsorship
-                        </a>
+                        </div>
                     </div>
-                    <br>
                 </div>    
             </div>
             <br>
@@ -327,14 +340,14 @@
 
 
 
-
+    
     <div class="social-media-wi">
         <ul>
             <li class="wi-youtube">
                 <a class="nav-link" href="https://www.youtube.com/@LetsOffLeash" target="_blank" class="text-theme"><i class="fab fa-youtube"></i></a>
             </li>
             <li class="wi-instagram">
-                <a class="nav-link" href="https://www.instagram.com/loljunctionpodcast" target="_blank" class="text-theme"><i class="fab fa-instagram"></i></a>
+                <a class="nav-link" href="https://www.instagram.com/askforkasturi" target="_blank" class="text-theme"><i class="fab fa-instagram"></i></a>
             </li>
             <li class="wi-facebook">
                 <a class="nav-link" href="http://facebook.com/LetsOffLeashlol" target="_blank" class="text-theme"><i class="fab fa-facebook-f"></i></a>
@@ -346,7 +359,9 @@
         </ul>
     </div>
 
-    <footer class="container-fluid fh5co-footer container-stiped" id="contact">
+
+    
+    <footer class="container-fluid fh5co-footer container-stiped">
         <div class="container" id="contact">
             <div class="row">
                 <div class="col-lg-5">
@@ -367,7 +382,7 @@
                             <a class="nav-link" href="https://www.youtube.com/@LetsOffLeash" target="_blank" class="text-theme"><i class="fab fa-youtube"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.instagram.com/loljunctionpodcast" target="_blank" class="text-theme"><i class="fab fa-instagram"></i></a>
+                            <a class="nav-link" href="https://www.instagram.com/askforkasturi" target="_blank" class="text-theme"><i class="fab fa-instagram"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="http://facebook.com/LetsOffLeashlol" target="_blank" class="text-theme"><i class="fab fa-facebook-f"></i></a>
@@ -429,6 +444,4 @@
             <p>&copy; 2025 <a href="javascript:void(0)" class="text-theme2"><strong>LOL - Let's Off Leash</strong></a>. All rights Reserved.</p>
         </div>
     </div>
-
 @endsection
-                  

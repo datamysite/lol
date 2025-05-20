@@ -8,6 +8,8 @@ use App\Http\Middleware\adminAuth;
 
 Route::namespace('App\Http\Controllers\web')->group(function(){
     Route::get('/', 'WebController@index')->name('home');
+    Route::get('/kasturijha', 'WebController@kasturijha');
+    Route::get('/lol', 'WebController@lol');
 
     //Blogs
     Route::get('/blogs', 'BlogController@index')->name('blogs');
@@ -86,6 +88,20 @@ Route::prefix('admin/panel')->namespace('App\Http\Controllers\admin')->group(fun
             Route::get('/delete/{id}', 'UpdateController@delete');
             Route::get('/edit/{id}', 'UpdateController@edit');
             Route::post('/update', 'UpdateController@update_blog')->name('admin.updates.update');
+
+        });
+
+        
+        //Episodes
+        Route::prefix('videos')->group(function () {
+
+            Route::get('/', 'VideoController@index')->name('admin.videos');
+            Route::get('/load', 'VideoController@load')->name('admin.videos.load');
+            Route::get('/search/{val}', 'VideoController@search');
+            Route::post('/create', 'VideoController@create')->name('admin.videos.create');
+            Route::get('/delete/{id}', 'VideoController@delete');
+            Route::get('/edit/{id}', 'VideoController@edit');
+            Route::post('/update', 'VideoController@update_blog')->name('admin.videos.update');
 
         });
 

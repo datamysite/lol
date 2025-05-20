@@ -164,13 +164,21 @@
     background-color: #fff;
     font-weight: 600;
     color: #084c47;
-    margin: auto;
-    margin-top: -30px;
+    margin-left: 35px;
     margin-bottom: 35px;
-    width: fit-content;
     padding: 12px 25px;
     font-size: 18px;
+    text-align: center;
 }
 #services .row{
     justify-content: center;
+}
+.main-logos {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.main-logos .active {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.22), transparent);
+    border-top: 5px solid #FFC100;
 }
