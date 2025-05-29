@@ -78,6 +78,6 @@
     </footer>
     <div class="container-fluid copy">
         <div class="col-lg-12">
-            <p>&copy; 2025 <a href="javascript:void(0)" class="text-theme2"><strong>LOL - Let's Off Leash</strong></a>. All rights Reserved.</p>
+            <p>&copy; 2025 <a href="javascript:void(0)" class="text-theme2"><strong>LOL - Let's Off Leash</strong></a>. All rights Reserved. Powered by <a href="https://daralafkarmarketing.ae/" target="_blank">Dar Alafkar Marketing LLC</a></p>
         </div>
     </div>

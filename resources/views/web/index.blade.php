@@ -15,7 +15,7 @@
                         <a class="hero-cta" href="https://www.youtube.com/@LetsOffLeash" target="_blank"><i class="fab fa-youtube"></i> View Channel</a>
                     </div>
                 </div>
-                <div class="swiper-slide" data-background="{{URL::to('public/images/lol-junction.png')}}" style="background-image: url({{URL::to('public/images/lol-junction.png')}});">
+                <div class="swiper-slide" data-background="{{URL::to('public/images/lol-junction.jpg')}}" style="background-image: url({{URL::to('public/images/lol-junction.jpg')}});">
                     <div class="inner"><h2>LOL Junction</h2> 
                     <p>Storytelling podcast on <br><font class="text-theme">Entrepreneurship</font>, <font class="text-theme">Wellness</font>, and <font class="text-theme">Lifestyle</font>.</p>
                     <br>
@@ -233,7 +233,7 @@
         </div>
     </div>
 
-
+<!-- 
     <div class="container-fluid fh5co-news" id="services">
         <div class="container">
             <h2>Services</h2>
@@ -325,7 +325,7 @@
     </div>
 
 
-
+ -->
 
 
     <div class="social-media-wi">
@@ -426,7 +426,7 @@
     </footer>
     <div class="container-fluid copy">
         <div class="col-lg-12">
-            <p>&copy; 2025 <a href="javascript:void(0)" class="text-theme2"><strong>LOL - Let's Off Leash</strong></a>. All rights Reserved.</p>
+            <p>&copy; 2025 <a href="javascript:void(0)" class="text-theme2"><strong>LOL - Let's Off Leash</strong></a>. All rights Reserved. Powered by <a href="https://daralafkarmarketing.ae/" target="_blank">Dar Alafkar Marketing LLC</a></p>
         </div>
     </div>
 
