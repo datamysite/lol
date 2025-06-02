@@ -14,10 +14,17 @@
     @yield('metaAddition')
 
     <link rel="canonical" href="{{@URL::current()}}" />
-    
+
     @include('web.includes.style')
     @yield('addStyle')
 
+    @foreach($headSnippet as $val)
+        @if($val->position == 'Head')
+          <!-- {{$val->name}} // Start -->
+              {!! $val->snippet_code !!}
+          <!-- {{$val->name}} // End -->
+        @endif
+      @endforeach
 </head>
 
 <body>
@@ -27,6 +34,15 @@
     
     @include('web.includes.scripts')
     @yield('addScript')
+
+    
+  @foreach($bodySnippet as $val)
+    @if($val->position == 'Body')
+      <!-- {{$val->name}} // Start -->
+          {!! $val->snippet_code !!}
+      <!-- {{$val->name}} // End -->
+    @endif
+  @endforeach
 </body>
 
 </html>
