@@ -13,6 +13,8 @@
     <meta name="keywords" content="{{@$metaTags->keywords}}{{@$ametaTags['keywords']}}">
     @yield('metaAddition')
 
+    <link rel="canonical" href="{{@URL::current()}}" />
+    
     @include('web.includes.style')
     @yield('addStyle')
 
