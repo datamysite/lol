@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="{{URL::to('/')}}/public/images/favicon.png">
-    <title>LOL - Let`s off Leash</title>
+    <title>{{@$metaTags->title}}{{@$ametaTags['title']}}{{empty($metaTags->title) && empty($ametaTags['title']) ? env('APP_NAME') : ''}}</title>
+    <meta name="description" content="{{@$metaTags->description}}{{@$ametaTags['description']}}">
+    <meta name="keywords" content="{{@$metaTags->keywords}}{{@$ametaTags['keywords']}}">
+    @yield('metaAddition')
 
     @include('web.includes.style')
     @yield('addStyle')
