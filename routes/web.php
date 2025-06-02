@@ -3,6 +3,15 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\adminAuth;
 
+//sitemap
+Route::get('/update-sitemap', function () {
+    Artisan::call('app:generate-sitemap');
+    $response['success'] = 'success';
+    $response['message'] = 'Success! Sitemap Successfully Updated.';
+    
+    return response()->json($response, 200);
+});
+
 
 //Web
 
