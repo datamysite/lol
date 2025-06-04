@@ -182,3 +182,26 @@
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.22), transparent);
     border-top: 5px solid #FFC100;
 }
+
+#insights p {
+    margin-top: 0;
+}
+#insights .row {
+    text-align: center;
+}
+#insights .row i {
+    font-size: 55px;
+    color: #ffc100;
+    margin-bottom: 5px;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+#insights .row h5 {
+    font-size: 30px;
+    margin: 6px 0;
+}
+.viewership {
+    font-size: 60px;
+    color: #ffc100;
+    text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.2), 0px -4px 0px rgba(255, 255, 255, 0.3);
+}

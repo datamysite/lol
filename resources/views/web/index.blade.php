@@ -233,6 +233,45 @@
         </div>
     </div>
 
+    <div class="container-fluid fh5co-news" id="insights">
+        <div class="container">
+            <h2>Insights</h2>
+            <p>At <strong>LOL "Let's Off Leash,"</strong> we’re building more than just content—we’re building a movement. With a powerful mix of storytelling, real experiences, and purpose-driven voices, our platform reaches 5 million+ people monthly who care about compassion, community, and change. We’ve created over 100 original pieces of content, welcomed 100+ inspiring guests, and continue to grow with a strong 6.7%+ click-through rate. Every story shared is a step toward awareness, empathy, and action. We're here to amplify voices that matter—join us in making an impact that goes beyond the screen.</p>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="viewership">1,000,000 +</h3>
+                    <p>Viewership per month</p>
+                    <br>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    <h5>5 Million+</h5>
+                    <p>Online Reach per month</p>
+                </div>
+
+                <div class="col-md-3">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h5>6.7%+</h5>
+                    <p>Click through Rate</p>
+                </div>
+
+                <div class="col-md-3">
+                    <i class="fa-solid fa-photo-film"></i>
+                    <h5>100+</h5>
+                    <p>Content Pieces</p>
+                </div>
+
+                <div class="col-md-3">
+                    <i class="fa fa-users"></i>
+                    <h5>100+</h5>
+                    <p>Guests</p>
+                </div>
+            </div>
+            <br>
+            <hr>
+        </div>
+    </div>
 <!-- 
     <div class="container-fluid fh5co-news" id="services">
         <div class="container">
