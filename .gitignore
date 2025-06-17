@@ -6,6 +6,7 @@
 /storage/*.key
 /storage/pail
 /vendor
+sitemap.xml
 .env
 .env.backup
 .env.production
