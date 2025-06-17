@@ -3,7 +3,11 @@
         Options -MultiViews -Indexes
     </IfModule>
 
+    
     RewriteEngine On
+
+    RewriteCond %{HTTP_HOST} ^www.letsoffleash.com [NC]
+    RewriteRule ^(.*)$ https://letsoffleash.com/$1 [L,R=301]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
