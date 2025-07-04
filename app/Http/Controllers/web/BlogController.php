@@ -10,7 +10,9 @@ class BlogController extends Controller
 {
     public function index(){
         $data['nav'] = 'blogs';
-        
+        if(!empty($_GET['page'])){
+            $data['nofollow'] = '1';
+        }
         $data['data'] = Blogs::where('status', '1')->orderBy('id', 'desc')->paginate(9);
         //dd($data);
         return view('web.blogs.index')->with($data);
