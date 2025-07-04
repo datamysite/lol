@@ -21,7 +21,7 @@
         </div>
 </section>
     
-    <div class="container-fluid fh5co-news" id="blogs">
+    <div class="container-fluid fh5co-news blog-container" id="blogs">
         <div class="container">
             <div class="row">
                 <div class=" col-lg-9">

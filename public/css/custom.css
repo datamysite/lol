@@ -35,7 +35,7 @@
   object-fit: cover;
     object-position: center;
     height: 200px;
-    width: 100%;
+    width: 85%;
 }
 
 #blogs .card-title {
@@ -208,7 +208,7 @@
 
 
 #blogs .blog-img {
-    height: 300px !important;
+    height: 350px !important;
     margin-bottom: 20px;
 }
 
@@ -221,4 +221,11 @@
 .page-link {
     padding: 6px 15px;
     color: #ffc129;
+}
+.blog-container h2 {
+    text-align: left;
+}
+.blog-container ul li {
+    padding-left: 0px !important;
+    margin-left: 18px;
 }
