@@ -205,3 +205,20 @@
     color: #ffc100;
     text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.2), 0px -4px 0px rgba(255, 255, 255, 0.3);
 }
+
+
+#blogs .blog-img {
+    height: 300px !important;
+    margin-bottom: 20px;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #ffc129;
+    border-color: #ffc129;
+}
+.page-link {
+    padding: 6px 15px;
+    color: #ffc129;
+}

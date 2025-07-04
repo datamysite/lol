@@ -30,6 +30,8 @@
 
     @yield('content')
 
+
+    @include('web.includes.footer')
     
     @include('web.includes.scripts')
     @yield('addScript')

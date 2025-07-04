@@ -24,8 +24,18 @@
     <div class="container-fluid fh5co-news" id="blogs">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    {!! $data->description !!}
+                <div class=" col-lg-9">
+                    <div class="row">
+                        <div class="col-12">
+                            <img class="card-img blog-img" src="{{URL::to('public/storage/blogs/'.$data->banner)}}" alt="{{$data->banner_alt}}">
+                        </div>
+                        <div class="col-12">
+                            {!! $data->description !!}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    
                 </div>
             </div>
             <br>

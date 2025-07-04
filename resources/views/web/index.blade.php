@@ -43,6 +43,41 @@
                              Work with <i class="fa fa-handshake"></i> Kasturi</a>
                     </div>
                 </div>
+                <div class="swiper-slide" data-background="{{URL::to('public/images/world.png')}}" style="background-image: url({{URL::to('public/images/world.png')}});">
+                    <div class="inner">
+                        <p><font class="text-theme">Welcome</font> to the world of</p> 
+                        <h2>Kasturi Jha</h2> 
+                        <a class="hero-cta" href="https://www.youtube.com/@LetsOffLeash" target="_blank"><i class="fab fa-youtube"></i> View Channel</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-background="{{URL::to('public/images/lol-junction.jpg')}}" style="background-image: url({{URL::to('public/images/lol-junction.jpg')}});">
+                    <div class="inner"><h2>LOL Junction</h2> 
+                    <p>Storytelling podcast on <br><font class="text-theme">Entrepreneurship</font>, <font class="text-theme">Wellness</font>, and <font class="text-theme">Lifestyle</font>.</p>
+                    <br>
+                    <a class="hero-cta" href="https://open.spotify.com/show/61pd8PHv95YUwPprdu5LZP" target="_blank"><i class="fab fa-spotify"></i> Listen to Podcast</a> 
+                </div>
+                </div>
+                <div class="swiper-slide" data-background="{{URL::to('public/images/letsoffleash.png')}}" style="background-image: url({{URL::to('public/images/letsoffleash.png')}});">
+                    <div class="inner">
+                        <h2>Let’s Off Leash </h2> 
+                        <p>The world’s first <br>animal podcast by <font class="text-theme">Kasturi Jha</font></p> 
+                        <br>
+                        <a class="hero-cta" href="https://open.spotify.com/show/61pd8PHv95YUwPprdu5LZP" target="_blank"><i class="fab fa-spotify"></i> Listen to Podcast</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-background="{{URL::to('public/images/kasturi-jha2.png')}}" style="background-image: url({{URL::to('public/images/kasturi-jha2.png')}});">
+                    <div class="inner">
+                        <h2>Kasturi Jha</h2> 
+                        <p>
+                            Brand <font class="text-theme">promotion</font>
+                            <br>Influencer <font class="text-theme">Marketing</font>
+                            <br>Event <font class="text-theme">Hosting</font>.
+                        </p> 
+                        <br>
+                        <a class="hero-cta" href="#contact">
+                             Work with <i class="fa fa-handshake"></i> Kasturi</a>
+                    </div>
+                </div>
             </div>
             <!-- End Of Swiper -->
             <div class="slide-progress"> 
@@ -383,90 +418,6 @@
             </li>
 
         </ul>
-    </div>
-
-    <footer class="container-fluid fh5co-footer container-stiped" id="contact">
-        <div class="container" id="contact">
-            <div class="row">
-                <div class="col-lg-5">
-                    <h2>CONTACT US TODAY NOW</h2>
-                    <p class="light">
-                        Have a story to share or a question for us? <br>Reach out—we’d love to hear from you!
-                    </p>
-                    <p>
-                        <span class="email"><img src="{{URL::to('/')}}/public/images/email.png"
-                                alt="email icon" /></span><b><a href="mailto:askforkasturi@letsoffleash.com">askforkasturi@letsoffleash.com</a></b>
-                    </p>
-                    <!-- <p>
-                        <span class="phone"><img src="{{URL::to('/')}}/public/images/phone.png" alt="phone icon" /></span><b>+123-456-7890</b>
-                    </p> -->
-                    <h5 class="text-theme2">We Are Social:</h5>
-                    <ul class="navbar-nav float-left social-links footer-social">
-                       <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/@LetsOffLeash" target="_blank" class="text-theme"><i class="fab fa-youtube"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.instagram.com/loljunctionpodcast" target="_blank" class="text-theme"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://facebook.com/LetsOffLeashlol" target="_blank" class="text-theme"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://linkedin.com/company/letsoffleash" target="_blank" class="text-theme"><i class="fab fa-linkedin"></i></a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="col-lg-7">
-                    <div class="form-box container-stiped">
-                        <h4>What would you like to talk about</h4>
-                        <p>We'd Love to Hear From you !</p>
-                        <hr />
-                        <form action="{{route('enquiry.submit')}}" method="post">
-                            @csrf
-                            <table class="table table-light table-borderless container-stiped">
-                                <tr>
-                                    <td>
-                                        <input type="text" class="form-control" name="name" placeholder="Name..." required>
-                                    </td>
-
-                                    <td>
-                                        <input type="text" class="form-control" name="phone" placeholder="Phone" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <input type="email" class="form-control" name="email" placeholder="Email address" required>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td colspan="2">
-                                        <textarea class="form-control" placeholder="You Message" name="description" required></textarea>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <button type="submit">
-                                            SUBMIT NOW
-                                        </button>
-
-                                    </td>
-                                </tr>
-                            </table>
-                        </form>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </footer>
-    <div class="container-fluid copy">
-        <div class="col-lg-12">
-            <p>&copy; 2025 <a href="javascript:void(0)" class="text-theme2"><strong>LOL - Let's Off Leash</strong></a>. All rights Reserved. Powered by <a href="https://daralafkarmarketing.ae/" target="_blank">Dar Alafkar Marketing LLC</a></p>
-        </div>
     </div>
 
 @endsection

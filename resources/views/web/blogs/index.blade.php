@@ -39,6 +39,12 @@
                       <br>
                     </div>
                 @endforeach
+
+                
+                  <div class="col-lg-12 blog-pagination">
+                    <br>
+                    {!! $data->withQueryString()->links('pagination::bootstrap-5') !!}
+                  </div>
               </div>
             <br>
         </div>
