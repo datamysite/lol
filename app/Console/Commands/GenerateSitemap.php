@@ -40,7 +40,7 @@ class GenerateSitemap extends Command
 
         //Blogs
             Blogs::get()->each(function (Blogs $blog) use ($sitmap) {
-                $sitmap->add(Url::create("/blog/".$blog->slug)->setPriority(0.64)->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY)->setLastModificationDate(Carbon::now()));
+                $sitmap->add(Url::create("/".$blog->slug)->setPriority(0.64)->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY)->setLastModificationDate(Carbon::now()));
             });
 
 
