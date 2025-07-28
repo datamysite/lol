@@ -5,6 +5,7 @@ namespace App\Http\Controllers\web;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Blogs;
+use App\Models\Categories;
 
 class BlogController extends Controller
 {
@@ -30,5 +31,20 @@ class BlogController extends Controller
             return redirect(route('blogs'));
         }
         return view('web.blogs.details')->with($data);
+    }
+
+    public function category($slug){
+        $data['nav'] = 'blogs';
+        if(!empty($_GET['page'])){
+            $data['nofollow'] = '1';
+        }
+        $cat = Categories::where('slug', $slug)->first();
+        if(!empty($cat->id)){
+            $data['data'] = Blogs::where('status', '1')->where('category_id', $cat->id)->orderBy('id', 'desc')->paginate(9);
+            //dd($data);
+            return view('web.blogs.index')->with($data);
+        }else{
+            return redirect(route('blogs'));
+        }
     }
 }
