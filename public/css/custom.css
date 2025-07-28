@@ -87,6 +87,7 @@
     border-bottom: 1px solid #7777;
     transition: all ease-in-out .3s;
     display: inline-flex;
+        font-size: 14px;
 }
 .blog-categories a:hover div:last-child {
     color: #ffc100;
