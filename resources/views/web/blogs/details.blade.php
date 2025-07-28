@@ -6,20 +6,23 @@
         
         @include('web.includes.header')
 
-        <div class="sub-header-div text-center" style="background-image: url('{{URL::to('/public/images/home-bg.png')}}');">
-            <div class="sub-header-content">
-                <h2 class="text-white">{{$data->heading}}</h2>
-                <br>
-                <p class="text-center">
-                    <small class="text-white cat">
-                        <i class="far fa-clock text-theme"></i>&nbsp;&nbsp;{{ \Carbon\Carbon::parse($data->created_at)->diffForHumans() }}
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <i class="fas fa-user text-theme"></i>&nbsp;&nbsp;{{$data->author->name}}
-                      </small>
-                </p>
-            </div>
-        </div>
 </section>
+    <div class="sub-header-div text-center">
+        <div class="blog-img">
+            <img src="{{URL::to('public/storage/blogs/'.$data->banner)}}" alt="{{$data->banner_alt}}">
+        </div>
+        <div class="sub-header-content">
+            <h1 class="text-white">{{$data->heading}}</h1>
+            <br>
+            <p class="text-center">
+                <small class="text-white cat">
+                    <i class="far fa-clock text-theme"></i>&nbsp;&nbsp;{{ \Carbon\Carbon::parse($data->created_at)->diffForHumans() }}
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fas fa-user text-theme"></i>&nbsp;&nbsp;{{$data->author->name}}
+                  </small>
+            </p>
+        </div>
+    </div>
     
     <div class="container-fluid fh5co-news blog-container" id="blogs">
         <div class="container">
@@ -33,7 +36,64 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    
+                    <div class="aside-form">
+                        <h3>Got Something to Say?</h3>
+                        <h4>Ask us anything</h4>
+                        <form action="{{route('enquiry.submit')}}" method="post">
+                            @csrf
+                            <input type="text" name="name" placeholder="Name" class="form-control" required>
+                            
+                            <input type="text" name="phone" placeholder="Phone" class="form-control" required>
+
+                            <input type="email" name="email" placeholder="Email" class="form-control aside-email" required>
+                                                        
+                            <textarea class="form-control" name="description" rows="4" placeholder="You Message" required></textarea>
+                            
+                            <button class="btn btn-theme">Submit Now</button>
+                        </form>
+                    </div>
+                    <br>
+                    <div class="ad-placeholder">
+                        <img src="{{URL::to('/public/lol-ad.jpg')}}" width="100%" alt="Ad Placeholder">
+                    </div>
+                    <br>
+                    @if(count($blog_categories) > 0)
+                    <div class="blog-categories">
+                        <h4>Blog Categories</h4>
+                        @foreach($blog_categories as $val)
+                            <a href="{{URL::to('/blogs/'.$val->slug)}}">
+                                {{$val->name}} <small>({{count($val->blogs)}})</small>
+                            </a>
+                        @endforeach
+                    </div>
+                    @endif
+
+                    <br>
+                    <div class="ad-placeholder">
+                        <img src="{{URL::to('/public/lol-ad.jpg')}}" width="100%" alt="Ad Placeholder">
+                    </div>
+                    <br>
+                    @if(count($recent) > 0)
+                    <div class="blog-categories">
+                        <h4>Recent Blogs</h4>
+                        @foreach($recent as $val)
+                            <a href="{{URL::to('/'.$val->slug)}}">
+                                <div class="blog-img-thumb">
+                                    <img src="{{URL::to('public/storage/blogs/'.$val->banner)}}" alt="{{$val->banner_alt}}">
+                                </div>
+                                <div>
+                                    {{$val->heading}}
+                                </div>
+                            </a>
+                        @endforeach
+                    </div>
+                    @endif
+
+                    <br>
+                    <div class="ad-placeholder">
+                        <img src="{{URL::to('/public/lol-ad.jpg')}}" width="100%" alt="Ad Placeholder">
+                    </div>
+                    <br>
                 </div>
             </div>
             <br>

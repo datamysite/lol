@@ -23,6 +23,8 @@ class BlogController extends Controller
         
         $data['data'] = Blogs::where('slug', $blog_slug)->where('status', '1')->first();
 
+        $data['recent'] = Blogs::where('status', '1')->orderBy('id', 'desc')->skip(3)->take(8)->get();
+
         $data['related'] = Blogs::where('slug', '!=', $blog_slug)->orderBy('id', 'desc')->limit(3)->get();
         if(empty($data['data']->id)){
             return redirect(route('blogs'));

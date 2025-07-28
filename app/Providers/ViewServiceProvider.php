@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 use App\Models\SnippetCode;
 use App\Models\MetaTags;
+use App\Models\Categories;
 
 class ViewServiceProvider extends ServiceProvider
 {
@@ -46,6 +47,7 @@ class ViewServiceProvider extends ServiceProvider
                                                                 ->orwhere('page_url', $data['actual_link']);
                                                 })->get();
 
+            $data['blog_categories'] = Categories::has('blogs', '>', 0)->with('blogs')->orderBy('name')->get();
             
             $view->with($data);
         });
