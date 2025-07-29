@@ -50,16 +50,16 @@
                     
                        <ul class="navbar-nav float-right menu-links">
                             <li class="nav-item">
-                                <a class="nav-link" href="#insights">Insights</a>
+                                <a class="nav-link" href="{{route('home')}}#insights">Insights</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#content">Content</a>
+                                <a class="nav-link" href="{{route('home')}}#content">Content</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#community">Community</a>
+                                <a class="nav-link" href="{{route('home')}}#community">Community</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#latest-updates">Latest Updates</a>
+                                <a class="nav-link" href="{{route('home')}}#latest-updates">Latest Updates</a>
                             </li>
 
                         </ul>
