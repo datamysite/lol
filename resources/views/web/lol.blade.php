@@ -43,6 +43,41 @@
                              Work with <i class="fa fa-handshake"></i> Kasturi</a>
                     </div>
                 </div>
+                <div class="swiper-slide" data-background="{{URL::to('public/images/world.png')}}" style="background-image: url({{URL::to('public/images/world.png')}});">
+                    <div class="inner">
+                        <p><font class="text-theme">Welcome</font> to the world of</p> 
+                        <h2>Kasturi Jha</h2> 
+                        <a class="hero-cta" href="https://www.youtube.com/@LetsOffLeash" target="_blank"><i class="fab fa-youtube"></i> View Channel</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-background="{{URL::to('public/images/lol-junction.jpg')}}" style="background-image: url({{URL::to('public/images/lol-junction.jpg')}});">
+                    <div class="inner"><h2>LOL Junction</h2> 
+                    <p>Storytelling podcast on <br><font class="text-theme">Entrepreneurship</font>, <font class="text-theme">Wellness</font>, and <font class="text-theme">Lifestyle</font>.</p>
+                    <br>
+                    <a class="hero-cta" href="https://open.spotify.com/show/61pd8PHv95YUwPprdu5LZP" target="_blank"><i class="fab fa-spotify"></i> Listen to Podcast</a> 
+                </div>
+                </div>
+                <div class="swiper-slide" data-background="{{URL::to('public/images/letsoffleash.png')}}" style="background-image: url({{URL::to('public/images/letsoffleash.png')}});">
+                    <div class="inner">
+                        <h2>Let’s Off Leash </h2> 
+                        <p>The world’s first <br>animal podcast by <font class="text-theme">Kasturi Jha</font></p> 
+                        <br>
+                        <a class="hero-cta" href="https://open.spotify.com/show/61pd8PHv95YUwPprdu5LZP" target="_blank"><i class="fab fa-spotify"></i> Listen to Podcast</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-background="{{URL::to('public/images/kasturi-jha2.png')}}" style="background-image: url({{URL::to('public/images/kasturi-jha2.png')}});">
+                    <div class="inner">
+                        <h2>Kasturi Jha</h2> 
+                        <p>
+                            Brand <font class="text-theme">promotion</font>
+                            <br>Influencer <font class="text-theme">Marketing</font>
+                            <br>Event <font class="text-theme">Hosting</font>.
+                        </p> 
+                        <br>
+                        <a class="hero-cta" href="#contact">
+                             Work with <i class="fa fa-handshake"></i> Kasturi</a>
+                    </div>
+                </div>
             </div>
             <!-- End Of Swiper -->
             <div class="slide-progress"> 
