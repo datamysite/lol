@@ -22,6 +22,7 @@ Route::namespace('App\Http\Controllers\web')->group(function(){
 
 
     Route::get('/about-us', 'WebController@about')->name('about');
+    Route::get('/contact-us', 'WebController@contact')->name('contact');
 
     //Blogs
     Route::get('/blogs', 'BlogController@index')->name('blogs');

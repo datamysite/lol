@@ -28,7 +28,7 @@
                                 <a class="nav-link {{$nav == 'blogs' ? 'active' : ''}}" href="{{route('blogs')}}">Blogs</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact us</a>
+                                <a class="nav-link {{$nav == 'contact' ? 'active' : ''}}" href="{{route('contact')}}">Contact us</a>
                             </li>
 
                         </ul>
