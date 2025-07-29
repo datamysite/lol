@@ -370,6 +370,7 @@
 }
 .blog-categories-list li {
     display: inline-block;
+    margin-bottom: 8px;
 }
 .blog-categories-list li a span {
     color: #999;
