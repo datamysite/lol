@@ -26,7 +26,7 @@
                 <div class="col-12 text-center">
                     <ul class="blog-categories-list">
                         <li>
-                            <a href="{{route('blogs')}}" class="{{empty($cat->id) ? 'active' : ''}}">All <span>({{count($data)}})</span></a>
+                            <a href="{{route('blogs')}}" class="{{empty($cat->id) ? 'active' : ''}}">All <span>({{$blogCount}})</span></a>
                         </li>
                         @foreach($categories as $val)
                             @if(count($val->blogs) != 0)

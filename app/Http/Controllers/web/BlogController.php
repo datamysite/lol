@@ -14,6 +14,7 @@ class BlogController extends Controller
         if(!empty($_GET['page'])){
             $data['nofollow'] = '1';
         }
+        $data['blogCount'] = Blogs::where('status', '1')->count();
         $data['data'] = Blogs::where('status', '1')->orderBy('id', 'desc')->paginate(9);
         $data['categories'] = Categories::all();
         //dd($data);
@@ -41,6 +42,7 @@ class BlogController extends Controller
         }
         $data['cat'] = Categories::where('slug', $slug)->first();
         if(!empty($data['cat']->id)){
+            $data['blogCount'] = Blogs::where('status', '1')->count();
             $data['data'] = Blogs::where('status', '1')->where('category_id', $data['cat']->id)->orderBy('id', 'desc')->paginate(9);
         $data['categories'] = Categories::all();
             //dd($data);
