@@ -20,6 +20,9 @@ Route::namespace('App\Http\Controllers\web')->group(function(){
     Route::get('/kasturijha', 'WebController@kasturijha');
     Route::get('/lol', 'WebController@lol');
 
+
+    Route::get('/about-us', 'WebController@about')->name('about');
+
     //Blogs
     Route::get('/blogs', 'BlogController@index')->name('blogs');
     Route::get('/blogs/{slug}', 'BlogController@category');

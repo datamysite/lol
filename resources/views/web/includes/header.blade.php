@@ -22,7 +22,7 @@
                                 <a class="nav-link {{$nav == 'home' ? 'active' : ''}}" href="{{route('home')}}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#about-us">About us</a>
+                                <a class="nav-link {{$nav == 'about' ? 'active' : ''}}" href="{{route('about')}}">About us</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {{$nav == 'blogs' ? 'active' : ''}}" href="{{route('blogs')}}">Blogs</a>

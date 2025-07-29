@@ -71,7 +71,7 @@ time, mark, audio, video {
 }
 body {
   font-family: "Larsseit";
-  color: #aeafb9;
+  color: #4a4a4a;
 }
 
 .container-fluid {
@@ -339,7 +339,7 @@ h2::after {
 
 p {
   font-family: "Larsseit";
-  color: #aeafb9;
+  color: #4a4a4a;
   font-size: 16px;
   line-height: 22px;
 }

@@ -40,4 +40,13 @@ class WebController extends Controller
 
         return view('web.lol')->with($data);
     }
+
+    public function about(){
+        $data['nav'] = 'about';
+        $data['blogs'] = Blogs::orderBy('created_at', 'desc')->limit(3)->get();
+        $data['updates'] = LatestUpdates::orderBy('created_at', 'desc')->limit(3)->get();
+
+        $data['videos'] = Videos::where('playlist_id', '2')->orderBy('id', 'desc')->limit(9)->get();
+        return view('web.about')->with($data);
+    }
 }
