@@ -23,6 +23,21 @@
         <div class="container">
             <br>
             <div class="row">
+                <div class="col-12 text-center">
+                    <ul class="blog-categories-list">
+                        <li>
+                            <a href="{{route('blogs')}}" class="{{empty($cat->id) ? 'active' : ''}}">All <span>({{count($data)}})</span></a>
+                        </li>
+                        @foreach($categories as $val)
+                            @if(count($val->blogs) != 0)
+                                <li>
+                                    <a href="{{URL::to('/blogs/'.$val->slug)}}" class="{{!empty($cat->id) && $cat->id == $val->id ? 'active' : ''}}">{{$val->name}} <span>({{count($val->blogs)}})</span></a>
+                                </li>
+                            @endif
+                        @endforeach
+                    </ul>
+                    <hr>
+                </div>
                 @foreach($data as $val)
                     <div class="col-12 col-sm-8 col-md-6 col-lg-4">
                       <div class="card">

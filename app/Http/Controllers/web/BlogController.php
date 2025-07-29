@@ -15,6 +15,7 @@ class BlogController extends Controller
             $data['nofollow'] = '1';
         }
         $data['data'] = Blogs::where('status', '1')->orderBy('id', 'desc')->paginate(9);
+        $data['categories'] = Categories::all();
         //dd($data);
         return view('web.blogs.index')->with($data);
     }
@@ -38,9 +39,10 @@ class BlogController extends Controller
         if(!empty($_GET['page'])){
             $data['nofollow'] = '1';
         }
-        $cat = Categories::where('slug', $slug)->first();
-        if(!empty($cat->id)){
-            $data['data'] = Blogs::where('status', '1')->where('category_id', $cat->id)->orderBy('id', 'desc')->paginate(9);
+        $data['cat'] = Categories::where('slug', $slug)->first();
+        if(!empty($data['cat']->id)){
+            $data['data'] = Blogs::where('status', '1')->where('category_id', $data['cat']->id)->orderBy('id', 'desc')->paginate(9);
+        $data['categories'] = Categories::all();
             //dd($data);
             return view('web.blogs.index')->with($data);
         }else{

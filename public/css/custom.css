@@ -357,3 +357,28 @@
 .sub-header-content p {
     color: #d5d5d5;
 }
+
+.blog-categories-list {
+        margin-bottom: 12px;
+    margin-top: -30px;
+}
+.blog-categories-list li a{
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 3px 12px;
+    color: #4a4a4a;
+}
+.blog-categories-list li {
+    display: inline-block;
+}
+.blog-categories-list li a span {
+    color: #999;
+    font-size: 14px;
+}
+.blog-categories-list li a.active, .blog-categories-list li a:hover{
+    border: 1px solid #ffc100;
+    border-radius: 3px;
+    padding: 3px 12px;
+    color: #fff;
+    background-color: #ffc100;
+}
