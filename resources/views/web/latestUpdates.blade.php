@@ -63,7 +63,6 @@
                             @endfor
                         </div> 
                     </div>
-                    <br><br>
                 @endforeach
                 
                   <div class="col-lg-12 blog-pagination">
