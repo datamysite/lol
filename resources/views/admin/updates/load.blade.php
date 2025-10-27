@@ -2,7 +2,6 @@
 <tr>
   <td>{{++$key}}</td>
   <td>
-    <img src="{{URL::to('public/storage/updates/'.$val->banner)}}" height="35px">&nbsp;&nbsp;
     {{$val->heading}}
   </td>
   <td><a href="{{$val->link}}" target="_blank">{{$val->link}}</a></td>
