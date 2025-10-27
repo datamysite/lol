@@ -24,7 +24,7 @@
             <br>
             <div class="row">
                 @foreach($data as $val)
-                    <div class="col-md-3">
+                    <div class="col-md-3 mb-30">
                         <article class="card h-100 hover-effect-scale bg-body-tertiary border-0 update-card">
                           <div class="card-img-top position-relative overflow-hidden">
                             <div class="ratio hover-effect-target update-image" style="--fn-aspect-ratio: calc(204 / 306 * 100%)">
