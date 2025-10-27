@@ -101,38 +101,6 @@
         </div>
     </div>
 
-    @if(count($updates) !== 0)
-        <div class="container-fluid fh5co-news" id="latest-updates">
-            <div class="container">
-                <h2>Latest Updates</h2>
-                <p class="text-center">Big things are coming! We have amazing guests, including pet experts and animal lovers, sharing valuable insights and heartwarming stories. Our upcoming episodes will cover pet care tips, training advice, and the latest trends in the animal world. Plus, exciting collaborations and new segments are on the way! Stay tuned, subscribe, and follow us for all the latest updates.</p>
-                <br>
-                <div class="row">
-                    @foreach($updates as $val)
-                        <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-                          <div class="card">
-                            <a href="{{$val->link}}" target="_blank">
-                                <img class="card-img" src="{{URL::to('public/storage/updates/'.$val->banner)}}" alt="{{$val->banner_alt}}">
-                            </a>
-                            <div class="card-body">
-                                <div class="news-block">
-                                    <a href="{{$val->link}}" target="_blank">
-                                        <h6 class="card-title text-theme2">{{$val->heading}}</h6>
-                                    </a>
-                                    <small class="text-muted cat">
-                                        <i class="far fa-clock text-theme"></i>&nbsp;&nbsp;{{ \Carbon\Carbon::parse($val->created_at)->diffForHumans() }}
-                                    </small>
-                                </div>
-                            </div>
-                          </div>
-                          <hr>
-                        </div>
-                    @endforeach
-                  </div>
-                <br>
-            </div>
-        </div>
-    @endif
 
     <div class="container-fluid our-content container-stiped" id="content">
         <div class="container">

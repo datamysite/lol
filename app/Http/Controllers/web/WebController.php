@@ -58,4 +58,14 @@ class WebController extends Controller
         $data['videos'] = Videos::where('playlist_id', '2')->orderBy('id', 'desc')->limit(9)->get();
         return view('web.contact')->with($data);
     }
+
+     public function latestUpdates(){
+        $data['nav'] = 'latest-updates';
+        if(!empty($_GET['page'])){
+            $data['nofollow'] = '1';
+        }
+        $data['data'] = LatestUpdates::orderBy('id', 'desc')->paginate(12);
+        //dd($data);
+        return view('web.latestUpdates')->with($data);
+    }
 }

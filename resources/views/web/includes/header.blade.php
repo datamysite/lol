@@ -59,7 +59,7 @@
                                 <a class="nav-link" href="{{route('home')}}#community">Community</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route('home')}}#latest-updates">Latest Updates</a>
+                                <a class="nav-link {{$nav == 'latest-updates' ? 'active' : ''}}" href="{{route('latestUpdates')}}">Latest Updates</a>
                             </li>
 
                         </ul>

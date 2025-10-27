@@ -5,6 +5,7 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\LatestUpdates;
+use App\Models\LatestUpdateImages;
 
 class UpdateController extends Controller
 {
@@ -32,59 +33,32 @@ class UpdateController extends Controller
     public function create(Request $request)
     {
         $data = $request->all();
-        $response = [];
 
-        if (empty($data['heading']) || empty($data['slug']) || empty($data['description']) || empty($data['read_time']) || empty($data['short_description']) || empty($data['author_id'])) {
-            $response['success'] = false;
-            $response['errors'] = 'Please Fill all required fields.';
-        } else {
+            $lu = new LatestUpdates;
+            $lu->heading = $data['heading'];
+            $lu->created_by = '1';
+            $lu->save();
 
-            $blog = Blogs::where('heading', $data['heading'])->get();
+            $id = $lu->id;
 
-            if (count($blog) == 0) {
+            $image_get = $request->images;
+            $i = 1;
+            foreach ($image_get as $image) {
+                
+                $ext = $image->getClientOriginalExtension();
+                $newname = $i.$id . date('dmyhis') . '.' . $ext;
 
-                $id = Blogs::create($data);
+                $image->move(public_path() . '/storage/updates', $newname);
 
+                $b = new LatestUpdateImages;
+                $b->update_id = $id;
+                $b->image = $newname;
+                $b->save();
 
-
-                //Meta Title -- Start
-
-                    $meta_url = 'https://datamysite.com/'.$data['slug'];
-
-                    $mt = new MetaTags;
-                    $mt->url = $meta_url;
-                    $mt->title = $data['heading'];
-                    $mt->keywords = '';
-                    $mt->description = $data['short_description'];
-                    $mt->created_by = Auth::guard('admin')->id();
-                    $mt->save();
-
-
-                //Meta Title -- End
-
-
-                if ($request->hasFile('coupon_image')) {
-                    $file = $request->file('coupon_image');
-                    $ext = $file->getClientOriginalExtension();
-                    $newname = $id . date('dmyhis') . '.' . $ext;
-
-                    $file->move(public_path() . '/storage/blogs', $newname);
-
-                    $b = Blogs::find($id);
-                    $b->banner = $newname;
-                    $b->save();
-                }
-
-                $response['success'] = 'success';
-                $response['message'] = 'Success! New Blog Added.';
-            } else {
-
-                $response['success'] = false;
-                $response['errors'] = 'Erorr, Blog already exist.';
+                $i++;
             }
-        }
 
-        echo json_encode($response);
+        return redirect()->back()->with('success', 'Updaed.');
     }
 
     public function update_blog(Request $request)

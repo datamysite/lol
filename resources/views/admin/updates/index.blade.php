@@ -91,7 +91,7 @@
 <div class="modal fade" id="addBlogFormModal">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
-      <form id="add_blog_form" action="{{route('admin.updates.create')}}">
+      <form method="post" enctype="multipart/form-data" action="{{route('admin.updates.create')}}">
         @csrf
         <div class="modal-header">
           <h4 class="modal-title">Add Update</h4>
@@ -100,27 +100,12 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="coupon-image-wrapper">
-                <input type="file" name="coupon_image" accept="image/*" required />
-                <div class="close-btn">×</div>
-              </div>
-            </div>
-          </div>
 
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-12">
               <div class="form-group">
-                <label>Reading Time</label>
-                <input type="number" class="form-control" name="read_time" placeholder="Enter reading time in minutes" required>
-              </div>
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <label>Image alt:</label>
-                <input type="text" class="form-control" name="banner_alt" required>
+                <label>Images</label>
+                <input type="file" class="form-control" name="images[]" multiple required>
               </div>
             </div>
           </div>
@@ -130,35 +115,6 @@
               <div class="form-group">
                 <label>Heading</label>
                 <input type="text" class="form-control blogHeading" name="heading" required>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <div class="form-group slug-field">
-                <label>Slug</label>
-                <div class="form-control">
-                  <span>{{URL::to('/')}}/blogs/</span>
-                  <input type="text" class="blogSlug" name="slug" required>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="form-group">
-                <label>Short Description</label>
-                <textarea class="form-control" name="short_description" rows="3"></textarea>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <div class="form-group">
-                <label>Description</label>
-                <textarea class="form-control" name="description" id="content" rows="10"></textarea>
               </div>
             </div>
           </div>
@@ -203,6 +159,10 @@
 
   .ck.ck-reset_all.ck-widget__type-around {
     display: none;
+  }
+  input.form-control {
+      position: relative;
+      opacity: 1;
   }
 </style>
 @endsection
