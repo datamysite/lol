@@ -62,9 +62,8 @@
                                  data-lcl-title="Image {{$val->id}}"></a>
                             @endfor
                         </div> 
-
-                        <br><br>
                     </div>
+                    <br><br>
                 @endforeach
                 
                   <div class="col-lg-12 blog-pagination">
