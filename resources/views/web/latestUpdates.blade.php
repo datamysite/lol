@@ -62,6 +62,8 @@
                                  data-lcl-title="Image {{$val->id}}"></a>
                             @endfor
                         </div> 
+
+                        <br><br>
                     </div>
                 @endforeach
                 
